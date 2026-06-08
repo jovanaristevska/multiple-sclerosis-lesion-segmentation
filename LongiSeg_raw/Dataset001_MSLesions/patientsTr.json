@@ -1,0 +1,70 @@
+{
+    "patient1": [
+        "ms_001_t1",
+        "ms_001_t2"
+    ],
+    "patient2": [
+        "ms_002_t1",
+        "ms_002_t2"
+    ],
+    "patient3": [
+        "ms_003_t1",
+        "ms_003_t2"
+    ],
+    "patient4": [
+        "ms_004_t1",
+        "ms_004_t2"
+    ],
+    "patient5": [
+        "ms_005_t1",
+        "ms_005_t2"
+    ],
+    "patient6": [
+        "ms_006_t1",
+        "ms_006_t2"
+    ],
+    "patient7": [
+        "ms_007_t1",
+        "ms_007_t2"
+    ],
+    "patient8": [
+        "ms_008_t1",
+        "ms_008_t2"
+    ],
+    "patient9": [
+        "ms_009_t1",
+        "ms_009_t2"
+    ],
+    "patient10": [
+        "ms_010_t1",
+        "ms_010_t2"
+    ],
+    "patient11": [
+        "ms_011_t1",
+        "ms_011_t2"
+    ],
+    "patient12": [
+        "ms_012_t1",
+        "ms_012_t2"
+    ],
+    "patient13": [
+        "ms_013_t1",
+        "ms_013_t2"
+    ],
+    "patient14": [
+        "ms_014_t1",
+        "ms_014_t2"
+    ],
+    "patient15": [
+        "ms_015_t1",
+        "ms_015_t2"
+    ],
+    "patient16": [
+        "ms_016_t1",
+        "ms_016_t2"
+    ],
+    "patient17": [
+        "ms_017_t1",
+        "ms_017_t2"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "channel_names": {
+        "0": "FLAIR",
+        "1": "T1W"
+    },
+    "labels": {
+        "background": 0,
+        "lesion_change": 1
+    },
+    "numTraining": 34,
+    "file_ending": ".nii.gz",
+    "name": "MSLesions",
+    "description": "Longitudinal MS lesion change segmentation. Each patient has 2 cases: t1 (baseline, zero label) and t2 (follow-up, gt lesion change label). 2 channels per case: FLAIR + T1W.",
+    "reference": "Lesjak et al., Neuroinformatics 2016",
+    "licence": "CC-BY",
+    "tensorImageSize": "3D"
+}

@@ -1,0 +1,25 @@
+# Virtual environment
+longiseg_env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large data files
+*.nii.gz
+*.nii
+*.b2nd
+*.pth
+*.npz
+
+# Logs
+logs/
+*.out
+*.error
+
+# Preprocessed data
+LongiSeg_preprocessed/
+LongiSeg_results/
+predictions_*/
