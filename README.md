@@ -87,7 +87,6 @@ LongiSeg_Project/
 
 | Method | DSC↑ | Precision↑ | Recall↑ | F1↑ | Bal.Acc↑ | IoU↑ |
 |--------|------|-----------|--------|-----|---------|-----|
-| 3D CNN (one TP) | 0.374 | 0.261 | 0.912 | -- | -- | -- |
 | 3D U-Net (one TP) | 0.608 | 0.778 | 0.519 | 0.608 | 0.759 | 0.462 |
 | LongiUNet (two TP) | 0.317 | 0.798 | 0.209 | 0.317 | 0.605 | 0.194 |
 
@@ -173,34 +172,6 @@ cat predictions_allfolds/longi_summary.json
 # 3D U-Net results
 cat predictions_singletp_5folds/longi_summary.json
 ```
-
----
-
-## Important Fixes Applied to LongiSeg Source
-
-The following modifications were made to the LongiSeg source code:
-
-1. **`longi_dataset.py`** — Fixed random current scan selection to always use t2 as current (follow-up) and t1 as prior (baseline):
-```python
-# Changed from:
-current = np.random.randint(0, len(self.patients[patient]))
-# To:
-current = len(self.patients[patient]) - 1  # always t2
-```
-
-2. **`nnUNetTrainerNoLongi.py`** — Changed number of epochs from 1000 to 200:
-```python
-self.num_epochs = 200
-```
-
-3. **`nnUNetTrainerNoLongi.py`** — Fixed GradScaler for PyTorch 2.2.1 compatibility
-
-4. **`nnUNetTrainerNoLongi.py`** — Disabled `torch.compile` (no gcc in Singularity container):
-```python
-def _do_i_compile(self):
-    return False
-```
-
 ---
 
 ## Hardware
